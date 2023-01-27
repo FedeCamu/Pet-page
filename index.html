@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>German Shepard</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 44px;
+        color: #233142;
+        padding: 20px;
+        border: 3px dashed #455d7a;
+        border-radius: 10px;
+        margin: 25px auto;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        color: #233142;
+        margin: 30px auto;
+      }
+
+      p {
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #233142;
+        margin: 30px auto 15px auto;
+      }
+
+      a {
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+
+      .More_info {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #e3e3e3;
+        margin: 50px 0px 30px 0px;
+      }
+
+      .contacts {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #e3e3e3;
+        margin: 50px 0px 30px 0px;
+      }
+
+      .social_media_type {
+        color: #f95959;
+      }
+
+      .Coder {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #e3e3e3;
+        margin: 30px 0px;
+      }
+
+      .container {
+        background: linear-gradient(
+          180.3deg,
+          rgb(221, 221, 221) 5.5%,
+          rgb(110, 136, 161) 90.2%
+        );
+        width: 50%;
+        margin: auto;
+        padding: 30px;
+        display: block;
+        border-radius: 5px;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+        margin: 0px auto;
+        border-radius: 5px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        color: #e3e3e3;
+        background-color: #455d7a;
+        border: 1px solid #455d7a;
+        font-size: 24px;
+        line-height: 22px;
+        padding: 20px 60px;
+        border-radius: 30px;
+        box-shadow: rgb(37 39 89 / 20%) 0px 10px 10px 0;
+      }
+
+      button:hover {
+        color: #455d7a;
+        background-color: #e3e3e3;
+        cursor: pointer;
+        border: 1px solid #e3e3e3;
+        transition: all 200ms ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Dogs 🐕</h1>
+
+      <h2><em>Especially German Shepard</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/641/original/GS_puppy.jpg?1666389434"
+      />
+
+      <p>
+        The <strong>German Shepherd</strong> or <strong> Alsatian </strong> is a
+        German breed of working dog of medium to large size. The breed was
+        developed by Max von Stephanitz using various traditional German herding
+        dogs from 1899. It was originally bred as a herding dog, for herding
+        sheep. It has since been used in many other types of work, including
+        disability assistance, search-and-rescue, police work, and warfare. It
+        is commonly kept as a companion dog, and according to the Fédération
+        Cynologique Internationale had the second-highest number of annual
+        registrations in 2013.
+      </p>
+
+      <a href="https://en.wikipedia.org/wiki/German_Shepherd" target="_blank">
+        Learn more on Wikipedia</a
+      >
+
+      <div class="More_info">
+        Would you like to receive effective tips on how to train your Puppy 🐶?
+
+        <br />
+        <br />
+        👇 👇 👇 👇
+      </div>
+
+      <button>CLICK HERE</button>
+
+      <div class="contacts">
+        <hr />
+        <span class="social_media_type">Email: </span>
+        <strong>hello@GSpuppies.com</strong>
+        <span class="social_media_type">Instagram: </span>
+        <strong>@GSpuppies.com</strong>
+        <hr />
+      </div>
+
+      <div class="Coder">Coded by Federica C.</div>
+
+      <script>
+        function clickHere() {
+          let name = prompt("What's your first name?");
+          let breed = prompt("What's your dog breed?");
+
+          breed = breed.toLowerCase();
+          breed = breed.trim();
+
+          if (
+            breed === "german shepard" ||
+            breed === "alsatian" ||
+            breed === "germanshepard" ||
+            breed === "german shepards"
+          ) {
+            alert(
+              `Hi ${name}! We'll be in touch shortly with great tips to train your puppy 🐕`
+            );
+          } else {
+            alert(`Sorry ${name}! Our tips are for German Shepards only 🐕`);
+          }
+        }
+
+        let clickHereButton = document.querySelector("button");
+
+        clickHereButton.addEventListener("click", clickHere);
+      </script>
+    </div>
+  </body>
+</html>
